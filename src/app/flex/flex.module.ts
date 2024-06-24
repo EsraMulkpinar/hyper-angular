@@ -6,6 +6,8 @@ import { MainLayoutComponent } from './layout/main-layout/main-layout.component'
 import { HeaderComponent } from './layout/header/header.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { FormComponent } from './components/form/form.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +15,8 @@ import { FooterComponent } from './layout/footer/footer.component';
     HeaderComponent,
     SidebarComponent,
     FooterComponent,
+    FormComponent,
+    MenuComponent
   ],
   imports: [
     CommonModule,

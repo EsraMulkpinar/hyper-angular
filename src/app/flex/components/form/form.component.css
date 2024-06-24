@@ -1,27 +1,28 @@
 form {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
-    margin: auto;
+    height: 100%;
+    padding: 20px;
 }
-
-label {
-    margin-bottom: 10px;
+.form-title{
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+h3{
+    display: flex;
+    justify-content: center;
 }
 
 input {
-    margin-bottom: 5px;
+    margin-bottom: 25px;
+    border-radius: 16px;
+    padding: 16px;
 }
 
 button {
     margin-top: 10px;
-}
-
-form {
-    border: 2px solid #ccc;
-    padding: 20px;
-    border-radius: 16px;
-    background-color: #eef9f9;
 }
 .form-buttons{
     display: flex;
@@ -33,7 +34,8 @@ button[type="submit"],
 button[type="button"] {
     border-radius: 16px;
     padding: 10px;
-    width: 100px;
+    width: 45%;
+    
 }
 
 button[type="submit"] {
@@ -45,7 +47,6 @@ button[type="submit"] {
 }
 
 button[type="submit"]:disabled {
-    background-color: #d6d6d6;
     cursor: not-allowed;
 }
 

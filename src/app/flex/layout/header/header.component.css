@@ -1,0 +1,22 @@
+header {
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe48e;
+}
+
+.sid-btn {
+    background-color: #ffe48e;
+    padding: 10px;
+    position: fixed;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+    transition: right 0.3s ease;
+    height: 40px;
+    border: none;
+  cursor: pointer;
+
+}

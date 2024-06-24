@@ -1,4 +1,5 @@
 <form [formGroup]="flexForm" (ngSubmit)="onSubmit()">
+    <div class="form-title">Flex Form</div>
     <input placeholder="First Name" formControlName="firstName" type="text">
     <div class="error-message" *ngIf="flexForm.get('firstName').invalid && flexForm.get('firstName').touched">
         First name is required.
@@ -14,8 +15,13 @@
         Email is required.
     </div>
 
+    <input placeholder="Password" formControlName="password" type="password">
+    <div class="error-message" *ngIf="flexForm.get('password').invalid && flexForm.get('password').touched">
+        Password is required.
+    </div>
+
     <div class="form-buttons">
-        <button type="submit" [disabled]="flexForm.invalid">Submit</button>
         <button type="button" (click)="onReset()" [disabled]="flexForm.pristine && flexForm.untouched">Reset</button>
+        <button type="submit" [disabled]="flexForm.invalid">Submit</button>
     </div>
 </form>
