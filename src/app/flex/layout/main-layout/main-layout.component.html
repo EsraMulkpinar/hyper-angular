@@ -1,13 +1,10 @@
 <div class="container">
-    <app-flex-header></app-flex-header>
+    <flex-header></flex-header>
     <div class="main-content">
-        <!-- <app-flex-sidebar></app-flex-sidebar> -->
-        <div class="content">
             <div class="flex-body">
-                <div class="app-menu"><app-menu></app-menu></div>
+                <div class="app-menu"><app-menu (menuItemClick)="onMenuItemClick($event)"></app-menu></div>
                 <div class="app-flex-form"><app-flex-form></app-flex-form></div>
                 <div class="app-sidebar"><app-flex-sidebar></app-flex-sidebar></div>
-            </div>
         </div>
     </div>
     <app-flex-footer></app-flex-footer>

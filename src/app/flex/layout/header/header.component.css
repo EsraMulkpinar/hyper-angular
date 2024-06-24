@@ -4,11 +4,16 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffe48e;
+
+}
+:host {
+  display: block;
+  background-color: var(--selected-color);
+  color: #fff;
 }
 
+
 .sid-btn {
-    background-color: #ffe48e;
     padding: 10px;
     position: fixed;
     right: 30px;

@@ -4,5 +4,12 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #add8a3;
+    
 }
+:host {
+    display: block;
+    background-color: #add8a3;
+    color: #fff;
+
+  }
+  
