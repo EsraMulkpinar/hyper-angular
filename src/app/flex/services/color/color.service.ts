@@ -42,6 +42,6 @@ export class ColorService {
   }
 
   resetColor(): void {
-    this.setColor('#FFD700');
+    this.setColor('#3F6DA0');
   }
 }

@@ -37,7 +37,7 @@ export class FormComponent implements OnInit {
 
     onReset(): void {
     this.flexForm.reset();
-    this.colorService.setColor('#ffe48e'); 
+    this.colorService.setColor('#28577D'); 
   }
 
   applyColor(color: string): void {

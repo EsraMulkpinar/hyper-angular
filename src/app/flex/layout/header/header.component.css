@@ -1,11 +1,12 @@
 header {
-    width: 100vw;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100vw;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
+
 :host {
   display: block;
   background-color: var(--selected-color);
@@ -14,14 +15,14 @@ header {
 
 
 .sid-btn {
-    padding: 10px;
-    position: fixed;
-    right: 30px;
-    top: 0;
-    bottom: 0;
-    transition: right 0.3s ease;
-    height: 40px;
-    border: none;
+  padding: 10px;
+  position: fixed;
+  right: 30px;
+  top: 0;
+  bottom: 0;
+  transition: right 0.3s ease;
+  height: 40px;
+  border: none;
   cursor: pointer;
 
 }

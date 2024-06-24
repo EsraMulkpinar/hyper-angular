@@ -6,24 +6,32 @@
     justify-content: start;
     align-items: center;
     border-radius: 8px;
-    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); */
+    
   }
   
   .menu ul {
     list-style-type: none;
-    width: 100%;
+    width: 80%;
+    padding: 20px;
+
 
   }
   
   .menu ul li {
     margin-bottom: 10px;
     background-color: #ce77a2;
-    border: none;
     border-radius: 16px;
-    width: 80%;
+    width: 240px;
+    cursor: pointer;
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .menu ul li {
+      width: 100%;
+    }
   }
   
   .menu ul li a {
+    border: 1px solid white;
     text-decoration: none;
     color: white;
     text-align: center;
@@ -33,9 +41,10 @@
     border-radius: 16px;
     transition: background-color 0.3s;
   }
-  
   .menu ul li a:hover {
-    background-color: #8f526f;
-
+    transition: border-color 0.5s;
+    border: 1px solid black;
+    
   }
+  
   

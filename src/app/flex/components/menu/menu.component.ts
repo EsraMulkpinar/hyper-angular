@@ -26,7 +26,9 @@ export class MenuComponent {
       { text: 'MENU ITEM', color: this.colorService.generateRandomColor() },
       { text: 'MENU ITEM', color: this.colorService.generateRandomColor() }
     ];
+    
   }
+  
 
   onMenuItemClick(color: string) {
     this.menuItemClick.emit(color);
