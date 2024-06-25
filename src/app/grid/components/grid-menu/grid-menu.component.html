@@ -1,0 +1,9 @@
+<nav class="menu">
+  <ul>
+    <li *ngFor="let item of menuItems">
+      <a [ngStyle]="{'background-color': item.color}" (click)="onMenuItemClick(item.color)">
+        <i class="fas fa-icon"></i> {{ item.text }}
+      </a>
+    </li>
+  </ul>
+</nav>

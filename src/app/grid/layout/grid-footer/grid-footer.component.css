@@ -1,0 +1,14 @@
+footer {
+    width: 100vw;
+    height: 40px;
+    display: grid;
+    place-items: center; 
+    color: #fff;
+  }
+  
+  :host {
+    display: block;
+    background-color: #add8a3;
+    color: #fff;
+  }
+  

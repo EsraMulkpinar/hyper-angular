@@ -1,25 +1,29 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { GridRoutingModule } from './grid-routing.module';
-import { HeaderGridComponent } from './layout/header/header.component';
-import { SidebarComponent } from './layout/sidebar/sidebar.component';
-import { FooterComponent } from './layout/footer/footer.component';
-import { MainLayoutComponent } from './layout/main-layout/main-layout.component';
-import { FormComponent } from './form/form.component';
+import { GridHeaderComponent } from './layout/grid-header/grid-header.component';
+import { GridSidebarComponent } from './layout/grid-sidebar/grid-sidebar.component';
+import { GridFooterComponent } from './layout/grid-footer/grid-footer.component';
+import { GridMainLayoutComponent } from './layout/grid-main-layout/grid-main-layout.component';
+import { GridFormComponent } from './components/grid-form/grid-form.component';
+import { GridMenuComponent } from './components/grid-menu/grid-menu.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
-    HeaderGridComponent,
-    SidebarComponent,
-    FooterComponent,
-    MainLayoutComponent,
-    FormComponent
+    GridHeaderComponent,
+    GridSidebarComponent,
+    GridFooterComponent,
+    GridMainLayoutComponent,
+    GridFormComponent,
+    GridMenuComponent
   ],
   imports: [
     CommonModule,
-    GridRoutingModule
+    GridRoutingModule,
+    FormsModule,
+    ReactiveFormsModule 
   ]
 })
 export class GridModule { }

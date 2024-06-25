@@ -1,0 +1,26 @@
+header {
+    width: 100vw;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    background-color: var(--selected-color);
+    color: #fff;
+  }
+  
+  :host {
+    display: block;
+    background-color: var(--selected-color);
+    color: #fff;
+  }
+  
+  .sid-btn {
+    padding: 10px;
+    position: fixed;
+    right: 30px;
+    top: 0;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    transition: right 0.3s ease;
+  }
+  

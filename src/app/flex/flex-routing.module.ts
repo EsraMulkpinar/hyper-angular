@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MainLayoutComponent } from './layout/main-layout/main-layout.component';
-import { FormComponent } from './components/form/form.component';
+import { FlexMainLayoutComponent } from './layout/flex-main-layout/flex-main-layout.component';
+import { FlexFormComponent } from './components/flex-form/flex-form.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: MainLayoutComponent,
+    component: FlexMainLayoutComponent,
     children: [
       {
         path: 'home',
@@ -14,7 +14,7 @@ const routes: Routes = [
       },
       {
         path: 'form',
-        component: FormComponent
+        component: FlexFormComponent
       }
     ]
   }

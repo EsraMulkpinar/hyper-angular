@@ -1,0 +1,61 @@
+form {
+    display: grid;
+    grid-template-rows:  1fr ;
+    padding: 20px;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 1.1em;
+    margin: 20px;
+    font-weight: 800;
+}
+
+input {
+    margin-bottom: 25px;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.grid-form-buttons {
+    display: grid;
+    grid-template-rows:1fr 1fr;
+}
+
+button[type="submit"],
+button[type="button"] {
+    border-radius: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+button[type="submit"] {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button[type="submit"]:disabled {
+    cursor: not-allowed;
+}
+
+button[type="button"] {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button[type="button"]:disabled {
+    cursor: not-allowed;
+}
+
+.error-message {
+    color: #ff0000;
+    font-size: 0.9em;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
