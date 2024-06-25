@@ -7,16 +7,6 @@ const routes: Routes = [
   {
     path: '',
     component: FlexMainLayoutComponent,
-    // children: [
-    //   {
-    //     path: 'home',
-    //     loadChildren: () => import('../flex/flex.module').then(m => m.FlexModule)
-    //   },
-    //   {
-    //     path: 'form',
-    //     component: FlexFormComponent
-    //   }
-    // ]
   }
 ];
 

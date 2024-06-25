@@ -6,12 +6,6 @@ const routes: Routes = [
   {
     path: '',
     component: GridMainLayoutComponent,
-    // children: [
-    //   {
-    //     path: 'home',
-    //     loadChildren: () => import('../grid/grid.module').then(m => m.GridModule)
-    //   },
-    // ]
   }
 ];
 
