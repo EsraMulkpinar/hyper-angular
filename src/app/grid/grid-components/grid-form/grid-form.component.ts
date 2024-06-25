@@ -25,7 +25,7 @@ export class GridFormComponent implements OnInit {
 
   onSubmit(): void {
     if (this.flexForm.valid) {
-      this.router.navigate(['/grid']);
+      this.router.navigate(['/flex']);
     }
   }
 
