@@ -11,7 +11,6 @@ export class FlexMainLayoutComponent {
   
   ngOnInit(): void {
     this.colorService.color$.subscribe(color => {
-      this.applyColor(color);
     });
   }
 

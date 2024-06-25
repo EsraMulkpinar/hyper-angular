@@ -7,7 +7,7 @@ import { SidebarService } from '../../../services/sidebar/sidebar.service';
   styleUrls: ['./flex-sidebar.component.css']
 })
 
-export class SidebarComponent implements OnInit {
+export class FlexSidebarComponent implements OnInit {
   isOpen = true;
   constructor(private sidebarService: SidebarService,private eRef: ElementRef) {
   }

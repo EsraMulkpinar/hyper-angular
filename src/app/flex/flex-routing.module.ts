@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FlexMainLayoutComponent } from './layout/flex-main-layout/flex-main-layout.component';
-import { FlexFormComponent } from './components/flex-form/flex-form.component';
+import { FlexMainLayoutComponent } from './flex-layout/flex-main-layout/flex-main-layout.component';
+import { FlexFormComponent } from './flex-components/flex-form/flex-form.component';
 
 const routes: Routes = [
   {

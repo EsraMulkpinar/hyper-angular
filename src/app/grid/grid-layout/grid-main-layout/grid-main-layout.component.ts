@@ -13,7 +13,6 @@ export class GridMainLayoutComponent {
   constructor(private colorService: ColorService) {}
   ngOnInit(): void {
     this.colorService.color$.subscribe(color => {
-      this.applyColor(color);
     });
   }
 
