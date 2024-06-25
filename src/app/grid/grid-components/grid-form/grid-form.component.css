@@ -10,14 +10,14 @@ form {
     font-size: 1.1em;
     margin: 20px;
     font-weight: 800;
-    width: 60%;
+    width: 59.8%;
 }
 
 input {
     margin-bottom: 25px;
     border-radius: 16px;
     padding: 16px;
-    width: 60%;
+    width: 59.8%;
 }
 
 button {
@@ -28,7 +28,7 @@ button {
     display: grid;
     grid-template-columns:1fr 1fr;
     gap: 0 20px;
-    width: 65%;
+    width: 64.5%;
 }
 
 button[type="submit"],
