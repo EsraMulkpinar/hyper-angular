@@ -1,8 +1,7 @@
-import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ColorService } from '../../../services/color/color.service';
-import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-flex-form',
@@ -11,9 +10,9 @@ import { isPlatformBrowser } from '@angular/common';
 })
 export class FlexFormComponent implements OnInit {
   flexForm!: FormGroup;
-  currentColor: string = ''; // Mevcut rengi saklamak için
+  currentColor: string = ''; 
 
-  constructor(private fb: FormBuilder, private router: Router, private colorService: ColorService, @Inject(PLATFORM_ID) private platformId: Object) { }
+  constructor(private fb: FormBuilder, private router: Router, private colorService: ColorService) { }
  
   ngOnInit(): void {
     this.flexForm = this.fb.group({
@@ -21,11 +20,6 @@ export class FlexFormComponent implements OnInit {
       lastName: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required]]
-    });
-
-    this.colorService.color$.subscribe(color => {
-      this.currentColor = color;
-      this.applyColor(color);
     });
   }
 
@@ -40,12 +34,5 @@ export class FlexFormComponent implements OnInit {
     this.colorService.setColor('#28577D'); 
   }
 
-  applyColor(color: string): void {
-    if (isPlatformBrowser(this.platformId)) {
-      const buttons = document.querySelectorAll('.form-buttons button');
-      buttons.forEach(button => {
-        (button as HTMLElement).style.backgroundColor = color;
-      });
-    }
-  }
+
 }

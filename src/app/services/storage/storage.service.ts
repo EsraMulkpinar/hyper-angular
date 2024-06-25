@@ -1,12 +1,10 @@
 import { Inject, Injectable, InjectionToken } from '@angular/core';
 
-// InjectionToken tanımlama
 export const BROWSER_STORAGE = new InjectionToken<Storage>('Browser Storage', {
   providedIn: 'root',
   factory: () => typeof localStorage !== 'undefined' ? localStorage : new NoopStorage()
 });
 
-// localStorage'ın sunucu tarafında mevcut olmadığı durumda kullanılacak geçici depolama
 class NoopStorage implements Storage {
   private data: Record<string, string> = {};
 

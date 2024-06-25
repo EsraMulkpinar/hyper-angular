@@ -9,16 +9,21 @@ export class ColorService {
   private colorSubject = new BehaviorSubject<string>(this.getStoredColor() || this.generateRandomColor());
   color$ = this.colorSubject.asObservable();
 
-  constructor(private storageService: BrowserStorageService) {}
+  constructor(private storageService: BrowserStorageService) {
+    const initialColor = this.colorSubject.value;
+    this.applyColor(initialColor);
+  }
 
   private getStoredColor(): string | null {
     return this.storageService.get('selectedColor');
   }
 
   setColor(color: string): void {
-    this.storageService.set('selectedColor', color);
-    this.colorSubject.next(color);
-    this.applyColor(color);
+    if (color && color !== this.colorSubject.value) {
+      this.storageService.set('selectedColor', color);
+      this.colorSubject.next(color);
+      this.applyColor(color);
+    }
   }
 
   private applyColor(color: string): void {

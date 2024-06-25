@@ -1,5 +1,5 @@
 <form class="grid-form" [formGroup]="flexForm" (ngSubmit)="onSubmit()">
-    <div class="form-title">Flex Form</div>
+    <div class="form-title">Grid Form</div>
     <input placeholder="First Name" formControlName="firstName" type="text">
     <div class="error-message" *ngIf="flexForm.get('firstName')?.invalid && flexForm.get('firstName')?.touched">
       First name is required.
