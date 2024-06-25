@@ -1,18 +1,22 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeLayoutComponent } from './home/home-layout/home-layout.component';
+import { FlexMainLayoutComponent } from './flex/layout/flex-main-layout/flex-main-layout.component';
+import { GridMainLayoutComponent } from './grid/grid-layout/grid-main-layout/grid-main-layout.component';
 
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
+    component:HomeLayoutComponent,
   },
   {
     path: 'flex',
-    loadChildren: () => import('./flex/flex.module').then(m => m.FlexModule)
+    component:FlexMainLayoutComponent,
   },
   {
     path: 'grid',
-    loadChildren: () => import('./grid/grid.module').then(m => m.GridModule)
+    component:GridMainLayoutComponent,
+
   },
   {
     path: '',

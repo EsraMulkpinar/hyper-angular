@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { MainRoutingModule } from './home-routing.module';
 import { HomeLayoutComponent } from './home-layout/home-layout.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -12,6 +13,8 @@ import { HomeLayoutComponent } from './home-layout/home-layout.component';
   imports: [
     CommonModule,
     MainRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
     
   ]
 })

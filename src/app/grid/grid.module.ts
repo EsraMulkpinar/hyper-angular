@@ -19,6 +19,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     GridFormComponent,
     GridMenuComponent
   ],
+  exports:[
+    GridHeaderComponent,
+    GridSidebarComponent,
+    GridFooterComponent,
+    GridMainLayoutComponent,
+    GridFormComponent,
+    GridMenuComponent
+  ],
   imports: [
     CommonModule,
     GridRoutingModule,
